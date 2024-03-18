@@ -1,0 +1,31 @@
+.container {
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 46px; 
+} 
+
+h3 {
+  text-align: center;
+}
+
+.square-container {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.square-container:empty::after {
+    content: ".";
+    visibility: hidden;
+}
+
+.square-container:hover, .square-container-active {
+    background-color: gray;
+    color: white;
+}
+
